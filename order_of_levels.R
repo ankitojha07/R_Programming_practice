@@ -23,3 +23,24 @@ print(data)
 print(is.data.frame(data))
 print(nrow(data))
 print(ncol(data))
+
+
+rd <- min(data$X3)
+rd2 <- max(data$X3)
+print(rd2)
+
+d <- read.csv("input.csv")
+print(d)
+
+retval <- subset(d, dept == "IT")
+print(retval)
+
+retval <- subset(d, as.Date(start_date) > as.Date("2014-01-01"))
+print(r)
+print("kjhgfd")
+
+write.csv(retval, "output.csv", row.names = FALSE, col.names = FALSE)
+n_data <- read.csv("output.csv")     
+print(n_data)
+
+q
